@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints</title>
+</head>
+<header>
+    <h1>Complaints Form</h1>
+    
+</header>
+
+<nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./team.html">Team</a></li>
+        <li><a href="./patient.html">Patient Information</a></li>
+        <li><a href="./well-being.html">Well-being Centre</a></li>
+        <li><a href="./complaints.html">Complaints</a></li>
+    </ul>
+</nav>
+<img src="https://picsum.photos/200/300" alt="A random image" width = device-width/>
+<body>
+    <form> 
+        <label for="name"> Full Name:</label><br>
+        <input type="text" id = "name" name = "name"><br>
+        <label for="patnum"> Patient Number:</label><br>
+        <input type="text" id = "patnum" name = "patnum"><br>
+        <label for="contact"> Contact(Mobile Number/Email):</label><br>
+        <input type="text" id = "contact" name = "contact"><br>
+
+        <p>Category of Complaint:</p>
+        <input type="radio" id="appointments" name="type" value="appointments">
+        <label for "appointments">Appointments</label><br>
+        <input type="radio" id="communication" name="type" value="communication">
+        <label for "communication">Communication</label><br>
+        <input type="radio" id="medicalcare" name="type" value="medicalcare">
+        <label for "medicalcare">Medical Care</label><br>
+        <input type="radio" id="others" name="type" value="others">
+        <label for "others">Others</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
