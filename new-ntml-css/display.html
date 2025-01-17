@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			input[type='checkbox'] {
+				display: none;
+			}
+
+			input[type='checkbox']:checked + .toggle-container {
+				display: inline;
+			}
+
+			.toggle-container {
+				display: block;
+				background-color: red;
+				margin: 10px;
+				padding: 10px;
+				border: 1px solid #333;
+			}
+
+			#displayToggleLabel {
+				background-color: blue;
+				color: white;
+				font-weight: bold;
+				padding: 3px 5px;
+				border-radius: 10px;
+			}
+		</style>
+		<title>Display Toggle</title>
+	</head>
+	<body>
+		<label id="displayToggleLabel" for="displayToggle"
+			>Click here to toggle display!</label
+		>
+		<input type="checkbox" id="displayToggle" />
+		<div class="toggle-container">
+			This starts as a block element but can be toggled to inline
+		</div>
+	</body>
+</html>
